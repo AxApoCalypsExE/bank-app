@@ -20,6 +20,11 @@ const config = {
     },
     extend: {
       colors: {
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        background: "hsl(var(--background))",
         fill: {
           1: "rgba(255, 255, 255, 0.10)",
         },
