@@ -90,36 +90,35 @@
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 220 43% 11%; /* darker blue color */
+    --foreground: 0 0% 98%; /* dark:text-gray-50 */
 
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card:220 43% 11%; /* darker blue color */
+    --card-foreground: 0 0% 98%; /* dark:text-gray-50 */
 
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover:220 43% 11%; /* darker blue color */
+    --popover-foreground: 0 0% 98%; /* dark:text-gray-50 */
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    --primary: 0 0% 98%; /* white text for primary */
+    --primary-foreground: 0 0% 9%; /* dark:text-gray-900 */
 
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 9 5% 23%; /* dark:bg-gray-800 */
+    --secondary-foreground: 0 0% 98%; /* dark:text-gray-50 */
 
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
+    --muted: 9 5% 23%; /* dark:bg-gray-800 */
+    --muted-foreground: 0 0% 63%; /* dark:text-gray-400 */
 
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 9 5% 23%; /* dark:bg-gray-800 */
+    --accent-foreground: 0 0% 98%; /* dark:text-gray-50 */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%; /* red */
+    --destructive-foreground: 0 0% 98%; /* white */
 
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+    --border: 9 5% 23%; /* dark:border-gray-600 */
+    --input: 9 5% 23%; /* dark:bg-gray-800 */
+    --ring: 0 0% 83%; /* light gray */
   }
 }
-
 
 @layer utilities {
   .input-class {
@@ -448,7 +447,7 @@
 
   /* Footer */
   .footer {
-    @apply flex cursor-pointer items-center justify-between gap-2 py-6 dark:bg-gray-800;
+    @apply flex cursor-pointer items-center justify-between gap-2 py-6 dark:bg-gray-900;
   }
 
   .footer_name {

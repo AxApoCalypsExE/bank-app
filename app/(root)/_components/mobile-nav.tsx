@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/footer";
 import {
   Sheet,
   SheetClose,
@@ -69,8 +70,8 @@ const MobileNav = ({ user }: MobileNavProps) => {
                           />
                         
                         <p
-                          className={cn("text-16 font-semibold text-black-2", {
-                            "text-white": isActive,
+                          className={cn("text-16 font-semibold dark:text-blue-500 text-black-2", {
+                            "text-white dark:text-white": isActive,
                           })}
                         >
                           {item.label}
@@ -84,7 +85,10 @@ const MobileNav = ({ user }: MobileNavProps) => {
               </nav>
             </SheetClose>
 
-            FOOTER
+            <Footer
+              user={user}
+              type="mobile"
+            />
           </div>
         </SheetContent>
       </Sheet>
