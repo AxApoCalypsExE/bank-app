@@ -8,6 +8,13 @@
   box-sizing: border-box;
 }
 
+.dark *,
+.dark ::before,
+.dark ::after {
+  border-color: #3e4b63; 
+}
+
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -197,7 +204,7 @@
   /* Home */
   .home {
     @apply no-scrollbar flex w-full flex-row max-xl:max-h-screen max-xl:overflow-y-scroll
-    dark:bg-gray-900;
+    dark:bg-[#1f2937];
   }
 
   .home-content {
@@ -231,7 +238,7 @@
 
   .recent-transactions {
     @apply flex w-full flex-col gap-6
-    dark:bg-gray-900;
+    dark:bg-[#1f2937];
   }
 
   .view-all-btn {
@@ -346,7 +353,7 @@
 
   /* Bank Info */
   .bank-info {
-    @apply gap-[18px] flex p-4 transition-all border bg-blue-25 border-transparent dark:bg-blue-900 dark:border-gray-600;
+    @apply gap-[18px] flex p-4 transition-all border bg-blue-25 border-transparent dark:bg-[#263242] dark:border-none;
   }
 
   /* Category Badge */
@@ -355,7 +362,7 @@
   }
 
   .banktab-item {
-    @apply gap-[18px] border-b-2 flex px-2 sm:px-4 py-2 transition-all dark:border-gray-600 dark:bg-gray-800 dark:text-gray-50;
+    @apply gap-[18px] border-b-2 flex px-2 sm:px-4 py-2 transition-all dark:border-gray-600 dark:bg-[#101828] dark:text-gray-50;
   }
 
   /* Mobile nav */
@@ -476,7 +483,7 @@
 
   /* Sidebar */
   .sidebar {
-    @apply sticky left-0 top-0 flex h-screen w-fit flex-col  justify-between border-r border-gray-200 bg-white pt-8 text-white max-md:hidden sm:p-4 xl:p-6 2xl:w-[355px] dark:border-gray-600 dark:bg-gray-900;
+    @apply sticky z-[99999] left-0 top-0 flex h-screen w-fit flex-col  justify-between border-r border-gray-200 bg-white pt-8 text-white max-md:hidden sm:p-4 xl:p-6 2xl:w-[355px] dark:border-gray-600 dark:bg-gray-900;
   }
 
   .sidebar-logo {
