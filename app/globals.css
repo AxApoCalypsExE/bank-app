@@ -294,7 +294,7 @@
 
   .banks {
     @apply flex flex-col justify-between gap-8 px-6 py-8
-    dark:bg-gray-800;
+    dark:bg-gray-900;
   }
 
   /* My Banks */
@@ -306,7 +306,7 @@
   /* My Banks */
   .transactions {
     @apply flex max-h-screen w-full flex-col gap-8 overflow-y-scroll bg-gray-25 p-8 xl:py-12
-    dark:bg-gray-900;
+    dark:bg-gray-800;
   }
 
   .transactions-header {
@@ -321,7 +321,7 @@
 
   .transactions-account-balance {
     @apply flex-center flex-col gap-2 rounded-md bg-blue-25/20 px-4 py-2 text-white
-    dark:bg-blue-900;
+    dark:bg-blue-700;
   }
 
   .header-box {
@@ -362,7 +362,7 @@
   }
 
   .banktab-item {
-    @apply gap-[18px] border-b-2 flex px-2 sm:px-4 py-2 transition-all dark:border-gray-600 dark:bg-[#101828] dark:text-gray-50;
+    @apply gap-[18px] border-b-2 flex px-2 sm:px-4 py-2 transition-all dark:border-gray-600 dark:text-gray-50;
   }
 
   /* Mobile nav */
@@ -419,7 +419,7 @@
 
   /* Payment Transfer */
   .payment-transfer {
-    @apply no-scrollbar flex flex-col overflow-y-scroll bg-gray-25 p-8 md:max-h-screen xl:py-12 dark:bg-gray-900;
+    @apply no-scrollbar flex flex-col overflow-y-scroll bg-gray-25 p-8 md:max-h-screen xl:py-12 dark:bg-gray-800;
   }
 
   .payment-transfer_form-item {
@@ -458,7 +458,7 @@
   }
 
   .footer_name {
-    @apply flex size-10 items-center justify-center rounded-full bg-gray-200 max-xl:hidden dark:bg-gray-600;
+    @apply z-[99999] flex size-10 items-center justify-center rounded-full bg-gray-200 max-xl:hidden dark:bg-gray-600;
   }
 
   .footer_email {

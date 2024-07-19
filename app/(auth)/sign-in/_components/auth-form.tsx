@@ -100,7 +100,6 @@ const AuthForm = ({ type }: { type: string }) => {
                 : "Please enter your details"}
             </p>
           </h1>
-          <ModeToggle />
         </div>
       </header>
       {user ? (

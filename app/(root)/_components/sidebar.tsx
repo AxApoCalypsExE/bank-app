@@ -1,6 +1,7 @@
 "use client";
 
 import Footer from "@/components/footer";
+import { ModeToggle } from "@/components/mode-toggle";
 import { sidebarLinks } from "@/constants"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
@@ -58,11 +59,14 @@ const Sidebar = ({ user }: SiderbarProps) => {
           </Link>
         )
       })}
-
-      USER
       </nav>
-
-      <Footer user={user} />
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex w-full items-center gap-x-2 font-semibold">
+          <ModeToggle />
+          <h2 className="max-xl:hidden">Change Theme</h2>
+        </div>
+        <Footer user={user} />
+      </div>
     </section>
   )
 }

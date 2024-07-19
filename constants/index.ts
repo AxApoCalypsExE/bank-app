@@ -51,43 +51,56 @@ export const ITEMS = [
 
 export const topCategoryStyles = {
   "Food and Drink": {
-    bg: "bg-blue-25",
-    circleBg: "bg-blue-100",
-    text: {
-      main: "text-blue-900",
-      count: "text-blue-700",
-    },
-    progress: {
-      bg: "bg-blue-100",
-      indicator: "bg-blue-700",
-    },
-    icon: "/icons/monitor.svg",
-  },
-  Travel: {
-    bg: "bg-success-25",
-    circleBg: "bg-success-100",
-    text: {
-      main: "text-success-900",
-      count: "text-success-700",
-    },
-    progress: {
-      bg: "bg-success-100",
-      indicator: "bg-success-700",
-    },
-    icon: "/icons/coins.svg",
-  },
-  default: {
-    bg: "bg-pink-25",
+    bg: "bg-pink-25 dark:bg-pink-700",
     circleBg: "bg-pink-100",
     text: {
-      main: "text-pink-900",
-      count: "text-pink-700",
+      main: "text-pink-900 dark:text-pink-100",
+      count: "text-pink-700 dark:text-pink-50",
     },
     progress: {
       bg: "bg-pink-100",
-      indicator: "bg-pink-700",
+      indicator: "bg-pink-700 dark:bg-pink-500",
     },
-    icon: "/icons/shopping-bag.svg",
+    icon: "/icons/food.svg",
+  },
+  Travel: {
+    bg: "bg-blue-25 dark:bg-blue-700",
+    circleBg: "bg-blue-100",
+    text: {
+      main: "text-blue-700 dark:text-blue-100",
+      count: "text-blue-500 dark:text-blue-50",
+    },
+    progress: {
+      bg: "bg-blue-100",
+      indicator: "bg-blue-700 dark:bg-blue-500",
+    },
+    icon: "/icons/coins.svg",
+  },
+  Transfer: {
+    bg: "bg-purple-50 dark:bg-purple-700",
+    circleBg: "bg-purple-100",
+    text: {
+      main: "text-purple-900 dark:text-purple-100",
+      count: "text-purple-700 dark:text-purple-50",
+    },
+    progress: {
+      bg: "bg-purple-100",
+      indicator: "bg-purple-700 dark:bg-purple-500",
+    },
+    icon: "/icons/send-money.svg",
+  },
+  default: {
+    bg: "bg-yellow-50 dark:bg-yellow-700",
+    circleBg: "bg-yellow-100",
+    text: {
+      main: "text-yellow-900 dark:text-yellow-100",
+      count: "text-yellow-700 dark:text-yellow-50",
+    },
+    progress: {
+      bg: "bg-yellow-100",
+      indicator: "bg-yellow-700 dark:bg-yellow-500",
+    },
+    icon: "/icons/shopping-cart.svg",
   },
 };
 
@@ -99,9 +112,9 @@ export const transactionCategoryStyles = {
     chipBackgroundColor: "bg-inherit dark:bg-inherit",
   },
   Payment: {
-    borderColor: "border-success-600 dark:border-green-300",
-    backgroundColor: "bg-green-600 dark:bg-green-700",
-    textColor: "text-success-700 dark:text-green-300",
+    borderColor: "border-yellow-600 dark:border-yellow-300",
+    backgroundColor: "bg-yellow-600 dark:bg-yellow-700",
+    textColor: "text-yellow-700 dark:text-yellow-300",
     chipBackgroundColor: "bg-inherit dark:bg-inherit",
   },
   "Bank Fees": {
@@ -111,9 +124,9 @@ export const transactionCategoryStyles = {
     chipBackgroundColor: "bg-inherit dark:bg-inherit",
   },
   Transfer: {
-    borderColor: "border-red-700 dark:border-red-400",
-    backgroundColor: "bg-red-700 dark:bg-red-800",
-    textColor: "text-red-700 dark:text-red-400",
+    borderColor: "border-purple-700 dark:border-purple-400",
+    backgroundColor: "bg-purple-700 dark:bg-purple-800",
+    textColor: "text-purple-700 dark:text-purple-400",
     chipBackgroundColor: "bg-inherit dark:bg-inherit",
   },
   Processing: {
@@ -136,8 +149,8 @@ export const transactionCategoryStyles = {
   },
   default: {
     borderColor: "",
-    backgroundColor: "bg-blue-500 dark:bg-blue-700",
-    textColor: "text-blue-700 dark:text-blue-300",
+    backgroundColor: "bg-purple-500 dark:bg-purple-700",
+    textColor: "text-purple-700 dark:text-purple-300",
     chipBackgroundColor: "bg-inherit dark:bg-inherit",
   },
 };

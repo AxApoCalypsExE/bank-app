@@ -17,7 +17,6 @@ const HeaderBox = ({
           )}
         </h1>
         <div className="flex xl:hidden">
-          <ModeToggle />
         </div>
       </div>
       <p className="header-box-subtext">{subtext}</p>

@@ -18,15 +18,15 @@ export const createTransaction = async (transaction: CreateTransactionProps) => 
       TRANSACTION_COLLECTION_ID!,
       ID.unique(),
       {
-        channel: 'online',
-        category: 'Transfer',
+        channel: "online",
+        category: "Transfer",
         ...transaction
       }
     )
 
-    return parseStringify(newTransaction);
+    return parseStringify(newTransaction)
   } catch (error) {
-    console.log(error);
+    console.log(error)
   }
 }
 
