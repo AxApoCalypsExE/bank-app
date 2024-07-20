@@ -4,6 +4,7 @@ import RightSidebar from "./_components/right-sidebar";
 import { getLoggedInUser } from "@/lib/actions/user.actions";
 import { getAccount, getAccounts } from "@/lib/actions/bank.actions";
 import RecentTransactions from "./_components/recent-transactions";
+import { Loader2 } from "lucide-react";
 
 const Home = async ({ searchParams: { id, page }}: SearchParamProps) => {
   const currentPage = Number(page as string) || 1;
@@ -13,11 +14,14 @@ const Home = async ({ searchParams: { id, page }}: SearchParamProps) => {
   })
 
   if(!accounts) return;
+
+  
   
   const accountsData = accounts?.data;
   const appwriteItemId = (id as string) || accountsData[0]?.appwriteItemId;
 
   const account = await getAccount({ appwriteItemId })
+
 
   return (
     <section className="home">
@@ -36,13 +40,21 @@ const Home = async ({ searchParams: { id, page }}: SearchParamProps) => {
             totalCurrentBalance={accounts?.totalCurrentBalance}
           />
         </header>
-
-        <RecentTransactions
+        {account?.transactions.length < 1 ? (
+          <div className="text-12 text-gray-400 justify-center items-center flex">
+            <Loader2 className="animate-spin mr-2" />
+            Loading...
+          </div>
+        ) : (
+          <RecentTransactions
           accounts={accountsData}
           transactions={account?.transactions}
           appwriteItemId={appwriteItemId}
           page={currentPage}
         />
+        )}
+        
+       
       </div>
 
       <RightSidebar

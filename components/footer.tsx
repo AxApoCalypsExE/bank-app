@@ -2,6 +2,8 @@ import { logoutAccount } from "@/lib/actions/user.actions";
 import { LogOut } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import ProfileSettings from "@/components/profile-settings"
+import { ModeToggle } from "./mode-toggle";
 
 const Footer = ({ user, type = "desktop" }: FooterProps) => {
   const router = useRouter();
@@ -36,8 +38,9 @@ const Footer = ({ user, type = "desktop" }: FooterProps) => {
         className={type === "mobile"
           ? "footer_image-mobile" : "footer_image"
         }
-        onClick={handleLogout}>
-        <LogOut />
+        >
+        <ProfileSettings />
+        
       </div>
     </footer>
   );

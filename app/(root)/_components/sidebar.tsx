@@ -2,6 +2,7 @@
 
 import Footer from "@/components/footer";
 import { ModeToggle } from "@/components/mode-toggle";
+import PlaidLink from "@/components/plaid-link";
 import { sidebarLinks } from "@/constants"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
@@ -61,10 +62,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
       })}
       </nav>
       <div className="flex flex-col justify-center items-center">
-        <div className="flex w-full items-center gap-x-2 font-semibold">
-          <ModeToggle />
-          <h2 className="max-xl:hidden">Change Theme</h2>
-        </div>
+        <PlaidLink user={user} />
         <Footer user={user} />
       </div>
     </section>

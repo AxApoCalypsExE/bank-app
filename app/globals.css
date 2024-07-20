@@ -97,33 +97,32 @@
   }
 
   .dark {
-    --background: 220 43% 11%; /* darker blue color */
-    --foreground: 0 0% 98%; /* dark:text-gray-50 */
+    --background: 220 43% 11%; 
+    --foreground: 0 0% 98%;
 
-    --card:220 43% 11%; /* darker blue color */
-    --card-foreground: 0 0% 98%; /* dark:text-gray-50 */
+    --card:220 43% 11%; 
+    --card-foreground: 0 0% 98%;
 
-    --popover:220 43% 11%; /* darker blue color */
-    --popover-foreground: 0 0% 98%; /* dark:text-gray-50 */
+    --popover:220 43% 11%; 
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 98%; /* white text for primary */
-    --primary-foreground: 0 0% 9%; /* dark:text-gray-900 */
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
 
-    --secondary: 9 5% 23%; /* dark:bg-gray-800 */
-    --secondary-foreground: 0 0% 98%; /* dark:text-gray-50 */
+    --secondary: 9 5% 23%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 9 5% 23%; /* dark:bg-gray-800 */
-    --muted-foreground: 0 0% 63%; /* dark:text-gray-400 */
+    --muted: 9 5% 23%;
+    --muted-foreground: 0 0% 63%;
 
-    --accent: 9 5% 23%; /* dark:bg-gray-800 */
-    --accent-foreground: 0 0% 98%; /* dark:text-gray-50 */
+    --accent: 9 5% 23%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 62.8% 30.6%; /* red */
-    --destructive-foreground: 0 0% 98%; /* white */
-
-    --border: 9 5% 23%; /* dark:border-gray-600 */
-    --input: 9 5% 23%; /* dark:bg-gray-800 */
-    --ring: 0 0% 83%; /* light gray */
+    --destructive-foreground: 0 0% 98%; 
+    --destructive: 0 62.8% 30.6%;
+    --border: 9 5% 23%;
+    --input: 9 5% 23%;
+    --ring: 0 0% 83%;
   }
 }
 
@@ -379,6 +378,10 @@
     @apply text-16 rounded-lg border border-bankGradient bg-bank-gradient font-semibold text-white shadow-form;
   }
 
+  .plaidlink-add {
+    @apply text-16 font-bold dark:text-white p-0 items-start;
+  }
+
   .plaidlink-ghost {
     @apply flex cursor-pointer items-center justify-center gap-3 rounded-lg px-3 py-7 hover:bg-white lg:justify-start dark:hover:bg-gray-700;
   }
@@ -478,7 +481,7 @@
   }
 
   .footer_image-mobile {
-    @apply relative size-5;
+    @apply relative;
   }
 
   /* Sidebar */
