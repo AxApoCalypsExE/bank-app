@@ -14,14 +14,13 @@ const Home = async ({ searchParams: { id, page }}: SearchParamProps) => {
   })
 
   if(!accounts) return;
-
-  
   
   const accountsData = accounts?.data;
   const appwriteItemId = (id as string) || accountsData[0]?.appwriteItemId;
 
   const account = await getAccount({ appwriteItemId })
 
+  console.log(account.transactions)
 
   return (
     <section className="home">

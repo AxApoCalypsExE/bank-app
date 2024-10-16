@@ -13,9 +13,9 @@ const ibmPlexSerif = IBM_Plex_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "CoreNell Finance",
+  title: "Corenell Finance",
   description:
-    "CoreNell Finance: Seamlessly integrate banking with a comprehensive finance tracker. Monitor accounts, manage budgets, and achieve financial goals securely.",
+    "Corenell Finance: Seamlessly integrate banking with a comprehensive finance tracker. Monitor accounts, manage budgets, and achieve financial goals securely.",
   icons: {
     icon: "/icons/logo.svg",
   },
